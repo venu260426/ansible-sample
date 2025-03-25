@@ -1,0 +1,6 @@
+---
+## Clone the private repo on remote server
+- name: create directory
+  file:
+    path: ./basic-http-server 
+    state: directory
