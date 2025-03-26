@@ -1,11 +1,7 @@
 ---
-- hosts: myhosts
-  tasks:
-    - name: Block of tasks
-      block:
-        - name: Test connectivity
-          ping:
+- name: Test connectivity
+  ping:
 
-        - name: Another task
-          debug:
-            msg: "This is another task within the block"
+- name: Another task
+  debug:
+    msg: "This is another task within the block"

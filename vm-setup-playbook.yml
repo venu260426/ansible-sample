@@ -1,6 +1,6 @@
 ---
 - name: My Firsy Ansible playbook
-  hosts: all
+  hosts: myhosts
   remote_user: venu
   roles:
     - python
