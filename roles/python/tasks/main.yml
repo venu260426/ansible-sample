@@ -1,6 +1,11 @@
 ---
-## Clone the private repo on remote server
-- name: create directory
-  file:
-    path: ./basic-http-server 
-    state: directory
+- hosts: myhosts
+  tasks:
+    - name: Block of tasks
+      block:
+        - name: Test connectivity
+          ping:
+
+        - name: Another task
+          debug:
+            msg: "This is another task within the block"
